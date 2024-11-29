@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
         {/* Nav Links (Desktop) */}
         <div className="hidden md:flex space-x-10">
           {["Home", "About", "Products", "Services", "Testimonials", "Contact"].map((link) => (
-            <Link href={`/${link.toLowerCase()}`} key={link} className="hover:text-gray-400 text-lg">
+            <Link href={`/`} key={link} className="hover:text-gray-400 text-lg">
               {link}
             </Link>
           ))}
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden text-center">
           {["Home", "About", "Products", "Services", "Testimonials", "Contact"].map((link) => (
-            <Link href={`/${link.toLowerCase()}`} key={link}  className="block px-4 py-2 border-b border-gray-600 hover:bg-gray-600 text-lg"
+            <Link href={`/`} key={link}  className="block px-4 py-2 border-b border-gray-600 hover:bg-gray-600 text-lg"
             onClick={() => setIsOpen(false)}>
                 {link}
             </Link>
